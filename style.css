@@ -1,0 +1,107 @@
+:root {
+  --lexen-deca: "Lexend Deca", sans-serif;
+  --big-shoulders-display: "Big Shoulders Display", sans-serif;
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  color: #fff;
+  font-size: 15px;
+  margin: 50px 25px;
+  font-family: var(--lexen-deca);
+}
+
+.page {
+  max-width: 800px;
+  margin: auto 0;
+}
+.container {
+  display: grid;
+}
+
+.card-1 {
+  background-color: var(--bright-orange);
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.card-2 {
+  background-color: var(--dark-cyan);
+}
+
+.card-3 {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.card-1 button {
+  color: var(--bright-orange);
+}
+
+.card-2 button {
+  color: var(--dark-cyan);
+}
+
+.card-3 button {
+  color: var(--very-dark-cyan);
+}
+
+.card {
+  padding: 3rem;
+}
+
+.card h1 {
+  font-family: var(--big-shoulders-display);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 2rem 0;
+}
+
+.card p {
+  line-height: 1.5rem;
+}
+
+.card .button button {
+  font-family: var(--lexen-deca);
+  border: 2px solid #fff;
+  border-radius: 100px;
+  margin: 1.25rem 0;
+  margin-bottom: 0;
+  padding: 1rem 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-1 button:hover {
+  color: #fff;
+  background-color: var(--bright-orange);
+  cursor: pointer;
+}
+
+.card-2 button:hover {
+  color: #fff;
+  background-color: var(--dark-cyan);
+  cursor: pointer;
+}
+
+.card-3 button:hover {
+  color: #fff;
+  background-color: var(--very-dark-cyan);
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
